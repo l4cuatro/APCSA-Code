@@ -1,0 +1,34 @@
+import java.lang.*;
+import java.util.*;
+
+public static class Assignment_5 {
+	
+	public static void main(String[] args) {
+		Scanner Scan = new Scanner(System.in);
+		
+		String input = "";
+		String pivot = "";
+		
+		System.println("Input string");
+		input = Scan.nextLine();
+		System.out.println("Input pivot");
+		pivot = Scan.nextLine();
+		
+		if(input.contains(pivot) < 0 || pivot.isEmpty())
+			System.out.println("Error: invalid pivot");
+		else
+		{	
+			int pivotIndex = input.indexOf(pivot);
+			
+			String output = "";
+			
+			output = index.substring(pivotIndex + pivot.length() + 1) + pivot + input.substring(0, pivotIndex);
+			
+			System.out.println("Original: " + input);
+			System.out.println("After pivot: " + output);
+			
+		}
+		
+	}
+	
+}
